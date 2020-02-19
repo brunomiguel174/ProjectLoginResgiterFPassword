@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide bar</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="header--h1">MindGesment</h1>
+
+    </header>
+    <main>     
+        <div class="container" id="container">
+
+            <div class="form-container sign-up-container">
+
+                <form  method="GET" class="form--style" id="signup-form">
+                    <h1>Create Account</h1>
+
+                    <p class="form--warning form--warningSignUp"></p>
+
+
+                    <input type="email" class="form--inputStyle" id="input--emailSignUp" placeholder="Email ✉️" />
+
+                    <input type="password" class="form--inputStyle" id="input--passwordSignUp" placeholder="Password 🔒"
+                        minlength="4" maxlength="8" />
+
+                    <input type="password" class="form--inputStyle" id="input--repeatPasswordSignUp"
+                        placeholder="Repeat Password 🔒" minlength="4" maxlength="8" />
+
+                    <p class="form--warning form--warningSignUp"></p>
+
+                    <p class="form--warning form--warningPassword"></p>
+
+                    <button type="submit" class="form--buttonStyle" id="input--signUp">SIGN UP</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form action="#" class="form--style">
+                    <h1>Sign In</h1>
+
+                    <p class="form--warning" id="form--warningSignIn"></p>
+
+                    <input type="email" class="form--inputStyle" id="inputEmailIn" placeholder="Email ✉️" />
+
+                    <input type="password" class="form--inputStyle" id="inputPasswordIn" placeholder="Password 🔒" />
+
+                    <a href="./forgotPassword.html" class="signInContainer--forgotPassord">Forgot your password?</a>
+
+                    <button type="submit" class="form--buttonStyle" id="input--signIn">SIGN IN</button>
+                </form>
+
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+
+                        <p class="form--pInformation"> To keep connected with us please login with your personal info
+                        </p>
+
+                        <button class="form--buttonStyle ghost" id="signIn">Sign In</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+
+                        <p class="form--pInformation">Enter your personal details and start your journey with us</p>
+                        <button class="form--buttonStyle ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>All rights reserved to mindera school 2019/2020</p>
+    </footer>
+
+    <script src="./index.js" defer></script>
+
+</body>
+
+</html>
