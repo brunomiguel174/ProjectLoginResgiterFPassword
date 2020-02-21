@@ -81,7 +81,7 @@ input_signIn.addEventListener('click',
             formWarningSignIn.classList.add("appear--warning");
 
             formWarningSignIn.textContent = "⚠️ All fields are required";
- 
+
         }
         else {
             inputEmailIn.style.outline = "none";
@@ -103,7 +103,7 @@ input_signUp.addEventListener('click',
 
             form__warningPassword.innerHTML = "";
 
-            form__warningPassword.classList.remove("appear--warning");                
+            form__warningPassword.classList.remove("appear--warning");
 
         } else if (inputEmailIn.value.trim() !== "" || input__passwordSignUp.value.trim() !== input__repeatPasswordSignUp.value.trim()) {
             formWarningSignUp.textContent = "";
@@ -120,5 +120,8 @@ input_signUp.addEventListener('click',
             form__warningPassword.textContent = "";
         }
     });
+
+//design 
+
 
 
